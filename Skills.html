@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Monica</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+        
+    </script>
+    <style>
+      .card1{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card2{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card3{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card4{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #111111;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(247, 242, 242, 0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: lightskyblue;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #d6a6e39d;
+}
+
+.bar.learning::before{
+  width: calc(90% );
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+    </style>
+
+    
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+          <div class="row s-header__inner width-sixteen-col">
+
+              <div class="s-header__block">
+                  <div class="s-header__logo">
+                      <a class="logo" href="index.html">
+                          <img src="images\Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="Homepage">
+                      </a>
+                  </div>
+
+                  <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+              </div> <!-- end s-header__block -->
+
+              <nav class="s-header__nav">
+  
+                  <ul class="s-header__menu-links">
+                    <li><a href="index.html">Home</a></li>
+                      <li><a href="academics.html">Academics</a></li>
+                      <li><a href="Research.html">Research</a></li>
+                      <li><a href="Publications.html">Publications</a></li>
+                      <li><a href="Experience.html">Experience</a></li>
+                      <li><a href="Skills.html">Skills</a></li>
+                      <li><a href="Achievements.html">Achievements</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul> <!-- s-header__menu-links -->
+
+                  <div class="s-header__contact">
+                      <a href="D:\IITB\Personal website\monica-1.0.0\Resume.pdf" class="btn btn--primary s-header__contact-btn" target="_blank">Gallery</a>                        
+                  </div> <!-- s-header__contact -->
+  
+              </nav> <!-- end s-header__nav -->
+
+          </div> <!-- end s-header__inner -->
+
+      </header> <!-- end s-header -->
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+          <section class="s-pageheader pageheader">
+            <div class="row">
+                <div class="column xl-12">
+                    <h1 class="page-title">
+                        My Skills
+                    </h1>
+                </div>
+            </div>
+          </section>
+          <section class="s-pagecontent pagecontent"> 
+            <section class="card">
+              <div class="row">
+              <div class="card1">
+                <div class="bar learning" data-skill="Operating System: Windows/Linux/Ubuntu"></div>
+                <div class="bar back intermediate" data-skill="Programming languages: R, Python"></div>
+              </div>
+              <div class="card2">
+                <div class="bar back advanced" data-skill="Web Development: PHP, SQL, HTML"></div>
+                <div class="bar front advanced" data-skill="Big data analysis (RNA/DNA seq)"></div>
+              </div>
+             
+              <div class="card3">
+              <div class="bar back intermediate" data-skill="Problem-solving and critical thinking"></div>
+              <div class="bar front advanced" data-skill="Time management"></div>
+            </div>
+            <div class="card4">
+              <div class="bar front advanced" data-skill="Quick learner"></div>
+              <div class="bar back expert" data-skill="Good communicator"></div>
+            </div>
+            </div>
+            </section>
+          </section>   
+        </section> <!-- s-content-->
+        
+
+  <!-- # footer 
+        ================================================== -->
+        <footer class="s-footer">
+          <div class="row s-footer__content">
+              <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">                    
+                  <h3>About Keerthana</h3>
+                  <p>
+                      Currently positioned as a Doctoral Researcher at IIT Bombay, 
+                      I aim to leverage my comprehensive training and honed skills 
+                      to effectively collect data, develop well-informed hypotheses, 
+                      and operate as a skilled and adept researcher contributing meaningfully 
+                      to society through my research endeavors.
+                  </p>               
+              </div>                
+              <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
+                  <h3>Links</h3>
+                  <ul class="link-list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="academics.html">Academics</a></li>
+                      <li><a href="Research.html">Research</a></li>
+                      <li><a href="Publications.html">Publications</a></li>
+                      <li><a href="Experience.html">Experience</a></li>
+                      <li><a href="Skills.html">Skills</a></li>
+                  </ul>
+              </div>
+              <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
+                  <h3>More about me</h3>
+
+                  <div class="s-about__content-btn grid-section-split__bottom" >
+
+                      <ul class="s-about__social social-list">
+                          <li>
+                              <a href="https://x.com/keerthanavinod8">
+                                  <img src="images\Linkedin.png" width="50" height="50" viewBox="0 0 24 24" </img>
+                                  <span class="u-screen-reader-text">Linkedin</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.researchgate.net/profile/Keerthana-Vinod-Kumar">
+                                  <img src="images\researchgate.png" width="40" height="40" viewBox="0 0 24 24" </img>
+                                  <span class="u-screen-reader-text">Research gate</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://scholar.google.com/citations?user=fQREIEEAAAAJ&hl=en">
+                                  <img src="images\google-scholar.png" width="50" height="50" viewBox="0 0 24 24" </img>
+                                  <span class="u-screen-reader-text">Google Scholar</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://orcid.org/0009-0005-1980-7802">
+                                  <img src="images\orcid-og-image.png" width="47" height="47" viewBox="0 0 24 24" </img>
+                                  <span class="u-screen-reader-text">Orchid</span>
+                              </a>
+                          </li>
+                      </ul> <!-- end s-footer__social -->
+                  </div> <!-- end s-about__content-btn -->
+              </div>
+          </div>    
+
+          
+      </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    'use strict';
+
+    function progressBarAndCountNumber () {
+        const progress = document.querySelectorAll('.progress');
+        let count = 0;
+        // You must put the maximum number in the MAX variable.
+        let MAX = 80;
+    
+        let run = setInterval(() => {
+            count++;
+            progress.forEach(element => {
+                if (count <= element.dataset.progress) {
+                    element.parentElement.style.background = `conic-gradient(#f9004d ${count}%, #212428 0)`;
+                    element.firstElementChild.textContent = `${count}%`;
+                };
+                if (count == MAX) {
+                    clearInterval(run);
+                };
+            });
+        }, 20);
+    }
+    
+    progressBarAndCountNumber();
+    </script>
+
+</body>
+</html>
